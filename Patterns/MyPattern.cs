@@ -11,7 +11,7 @@ namespace Patterns
     {
         public static string Name = "^[A-Z]{1}[a-zA-Z]{2,}$";
         public static string email = "^[a-z]{3,}([.]{1}[a-z]{2,})?[/@/][a-z]{2,5}[/./][a-z]{2,5}([.]{1}[a-z]{2})?$";
-
+        public static string phoneNumber = "^91[/ /][6-9]{1}[0-9]{9}$";
         public string ValidateFirstAndLastName(string data)
         {
             string result = Regex.IsMatch(data, Name) ? "Valid" : "Invalid";
@@ -24,5 +24,12 @@ namespace Patterns
             return result;
 
         }
+        public string ValidatePhoneNumber(string data)
+        {
+            string result = Regex.IsMatch(data, phoneNumber) ? "Valid" : "Invalid";
+            return result;
+
+        }
+        
     }
 }

@@ -12,6 +12,8 @@
             Console.WriteLine(registrationPattern.ValidateFirstAndLastName((Console.ReadLine())));
             Console.WriteLine("Enter  Email");
             Console.WriteLine(registrationPattern.ValidateEmailName(Console.ReadLine()));
+            Console.WriteLine("Enter  PhoneNumber");
+            Console.WriteLine(registrationPattern.ValidatePhoneNumber(Console.ReadLine()));
 
         }
     }
