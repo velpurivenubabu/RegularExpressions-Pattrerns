@@ -9,11 +9,11 @@ namespace Patterns
 {
     public class MyPattern
     {
-        public static string firstName = "^[A-Z]{1}[a-zA-Z]{2,}$";
+        public static string Name = "^[A-Z]{1}[a-zA-Z]{2,}$";
 
         public string ValidateFirstName(string data)
         {
-            string result = Regex.IsMatch(data, firstName) ? "Valid" : "Invalid";
+            string result = Regex.IsMatch(data, Name) ? "Valid" : "Invalid";
             return result;
 
         }   
